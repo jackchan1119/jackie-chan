@@ -9,8 +9,11 @@ import {
   Network,
   MonitorCog,
   GraduationCap,
-} from "lucide-react";
+  Download,
+  Award,
+} from 'lucide-react';
 import './styles.css';
+import './certifications.css';
 
 const experience = [
   {
@@ -53,6 +56,9 @@ const experience = [
   }
 ];
 
+// Add certificate records here after uploading each file to public/certificates/.
+const certifications = [];
+
 const skills = [
   { icon: ShieldCheck, title: 'Security', items: 'CrowdStrike Falcon, Mimecast, Microsoft 365 Defender, Microsoft Entra ID, ISO 27001, SOC 2' },
   { icon: Network, title: 'Infrastructure', items: 'Active Directory, Azure, Intune, Exchange, VPN, Cisco, Networking' },
@@ -68,6 +74,7 @@ function App() {
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
+          <a href="#certifications">Certifications</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
         </div>
@@ -83,6 +90,7 @@ function App() {
           <div className="hero-actions">
             <a className="button primary" href="#experience">View experience</a>
             <a className="button" href="#contact"><Mail size={17} /> Get in touch</a>
+            <a className="button" href={`${import.meta.env.BASE_URL}resume.pdf`} download="Jackie-Chan-Resume.pdf"><Download size={17} /> Download résumé</a>
           </div>
           <a className="scroll" href="#about" aria-label="Scroll to about section"><ChevronDown /></a>
         </header>
@@ -120,8 +128,29 @@ function App() {
           </div>
         </section>
 
+        <section id="certifications" className="section certifications">
+          <p className="eyebrow">03 / CERTIFICATIONS</p>
+          <h2 className="section-title">Certifications & credentials</h2>
+          {certifications.length ? (
+            <div className="certification-grid">
+              {certifications.map((cert) => (
+                <article className="certification-card" key={cert.title}>
+                  <Award size={24} aria-hidden="true" />
+                  <h3>{cert.title}</h3>
+                  <p>{cert.issuer}{cert.date ? ` · ${cert.date}` : ''}</p>
+                  <a className="button" href={`${import.meta.env.BASE_URL}${cert.file}`} target="_blank" rel="noreferrer">
+                    <ExternalLink size={16} /> View certificate
+                  </a>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="certification-empty">Certificates will be added here soon.</p>
+          )}
+        </section>
+
         <section id="skills" className="section">
-          <p className="eyebrow">03 / EXPERTISE</p>
+          <p className="eyebrow">04 / EXPERTISE</p>
           <h2 className="section-title">Skills & knowledge</h2>
           <div className="skill-grid">
             {skills.map(({ icon: Icon, title, items }) => (
@@ -135,11 +164,11 @@ function App() {
         </section>
 
         <section id="contact" className="section contact">
-          <p className="eyebrow">04 / CONTACT</p>
+          <p className="eyebrow">05 / CONTACT</p>
           <h2>Let’s connect.</h2>
           <p>I’m interested in opportunities in Information Security, GRC, and Security Operations.</p>
           <div className="contact-links">
-            <a className="button primary" href="mailto:jackiechan1119@gmail.com"><Mail size={17} /> jackiechan1119@gmail.com</a>
+            <a className="button primary" href="mailto:jackchan1119@gmail.com"><Mail size={17} /> jackchan1119@gmail.com</a>
             <a className="button" href="https://www.linkedin.com/in/jackiechan11" target="_blank" rel="noreferrer"><ExternalLink size={17} /> LinkedIn</a>
           </div>
         </section>

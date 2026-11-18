@@ -1,0 +1,42 @@
+.certifications .section-title {
+  margin-bottom: 36px;
+}
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.certification-card {
+  padding: 28px;
+  border: 1px solid #e1e6ef;
+  border-radius: 12px;
+  background: #fff;
+}
+.certification-card > svg {
+  color: #315be8;
+}
+.certification-card h3 {
+  margin: 20px 0 8px;
+  font-size: 19px;
+}
+.certification-card p,
+.certification-empty {
+  color: #707c91;
+  line-height: 1.7;
+}
+.certification-card .button {
+  margin-top: 12px;
+}
+.certification-empty {
+  margin: 0;
+  padding: 28px;
+  border: 1px dashed #cbd4e3;
+  border-radius: 12px;
+  text-align: center;
+  background: #fff;
+}
+@media (max-width: 760px) {
+  .nav-links a:nth-child(4) { display: none; }
+  .nav-links { gap: 12px; font-size: 12px; }
+  .hero-actions .button { padding: 0 14px; }
+}
