@@ -32,7 +32,7 @@ const experience = [
   },
   {
     role: 'Lead Technical Support Specialist',
-    company: 'HMTL',
+    company: 'HMH',
     location: 'Boston, MA',
     date: 'October 2022 – November 2025',
     bullets: [
@@ -103,8 +103,15 @@ function App() {
           <div className="hero-actions">
             <a className="button primary" href="#experience">View experience</a>
             <a className="button" href="#contact"><Mail size={17} /> Get in touch</a>
-            <a className="button" href={`${import.meta.env.BASE_URL}resume.pdf`} download="Jackie-Chan-Resume.pdf"><Download size={17} /> Download résumé</a>
-          </div>
+           <a
+  className="button"
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  target="_blank"
+  rel="noreferrer"
+>
+  <Download size={17} />
+  View résumé
+</a>
           <a className="scroll" href="#about" aria-label="Scroll to about section"><ChevronDown /></a>
         </header>
 
