@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Mail, Linkedin, ChevronDown, MapPin, ShieldCheck, Network, MonitorCog, GraduationCap } from 'lucide-react';
+import {
+  Mail,
+  ExternalLink,
+  ChevronDown,
+  MapPin,
+  ShieldCheck,
+  Network,
+  MonitorCog,
+  GraduationCap,
+} from "lucide-react";
 import './styles.css';
 
 const experience = [
@@ -131,7 +140,7 @@ function App() {
           <p>I’m interested in opportunities in Information Security, GRC, and Security Operations.</p>
           <div className="contact-links">
             <a className="button primary" href="mailto:jackiechan1119@gmail.com"><Mail size={17} /> jackiechan1119@gmail.com</a>
-            <a className="button" href="https://www.linkedin.com/in/jackiechan11" target="_blank" rel="noreferrer"><Linkedin size={17} /> LinkedIn</a>
+            <a className="button" href="https://www.linkedin.com/in/jackiechan11" target="_blank" rel="noreferrer"><ExternalLink size={17} /> LinkedIn</a>
           </div>
         </section>
       </main>
