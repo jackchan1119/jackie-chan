@@ -38,7 +38,7 @@ const experience = [
     bullets: [
       'Led U.S. desktop support operations for 4,000+ employees and contractors, including executive leadership.',
       'Managed annual deployment of 300–500 laptops for employees and contractors, with 30-day deployment turnaround.',
-      'Enforced endpoint security controls and supported compliance efforts, contributing to HMTL achieving ISO 27001:2022 certification.',
+      'Enforced endpoint security controls and supported compliance efforts, contributing to HMTL achieving ISO 27001:2022 tification.',
       'Supported security toolings including CrowdStrike EDR, GlobalProtect VPN, and Biomerge secure remote support.',
       'Managed Okta SSO applications and administered Windows endpoints via Intune, Autopilot, and Apple enrollment.'
     ]
@@ -57,7 +57,21 @@ const experience = [
 ];
 
 // Add certificate records here after uploading each file to public/certificates/.
-const certifications = [];
+const certifications = [
+  {
+    title: 'CompTIA Security+',
+    issuer: 'CompTIA',
+    date: 'November 2026',
+    file: 'public/certificates/security-plus.pdf',
+  },
+  {
+    title: 'CompTIA Network+',
+    issuer: 'CompTIA',
+    date: 'June 2026',
+    file: 'public/certificates/network-plus.pdf
+',
+  },
+];
 
 const skills = [
   { icon: ShieldCheck, title: 'Security', items: 'CrowdStrike Falcon, Mimecast, Microsoft 365 Defender, Microsoft Entra ID, ISO 27001, SOC 2' },
