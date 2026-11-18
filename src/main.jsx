@@ -111,7 +111,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Download size={17} /> View résumé
+                <Download size={17} /> View resume
               </a>
             </div>
           </div>
