@@ -98,7 +98,6 @@ function App() {
           <div className="hero-grid" aria-hidden="true" />
 
           <div className="hero-content">
-            <div className="status"><span /> Open to opportunities</div>
             <h1>Jackie <span>Chan</span></h1>
             <p className="subtitle">IT Support Engineer <b>→</b> Information Security</p>
             <p className="intro">Building practical security experience through endpoint management, incident triage, compliance, identity, and audit operations.</p>
