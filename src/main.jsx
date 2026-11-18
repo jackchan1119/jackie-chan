@@ -32,7 +32,7 @@ const experience = [
   },
   {
     role: 'Lead Technical Support Specialist',
-    company: 'HMTL',
+    company: 'HMH',
     location: 'Boston, MA',
     date: 'October 2022 – November 2025',
     bullets: [
@@ -73,8 +73,8 @@ const certifications = [
 ];
 
 const skills = [
-  { icon: ShieldCheck, title: 'Security', items: 'CrowdStrike Falcon, Mimecast, Microsoft 365 Defender, Microsoft Entra ID, ISO 27001, SOC 2' },
-  { icon: Network, title: 'Infrastructure', items: 'Active Directory, Azure, Intune, Exchange, VPN, Cisco, Networking' },
+  { icon: ShieldCheck, title: 'Security', items: 'CrowdStrike Falcon, Mimecast, Microsoft 365 Defender, Microsoft Entra ID, ISO 27001' },
+  { icon: Network, title: 'Infrastructure', items: 'Active Directory, Azure, Intune, Exchange, VPN, Cisco' },
   { icon: MonitorCog, title: 'Endpoint & IT', items: 'Microsoft 365, macOS, Windows, Linux, Jamf Pro, ServiceNow, SAML 2.0' },
   { icon: GraduationCap, title: 'Education', items: 'University of Massachusetts Amherst — B.S. Computer Science' }
 ];
@@ -201,7 +201,6 @@ function App() {
         <section id="contact" className="section contact">
           <p className="eyebrow">05 / CONTACT</p>
           <h2>Let’s connect.</h2>
-          <p>I’m interested in opportunities in Information Security, GRC, and Security Operations.</p>
           <div className="contact-links">
             <a className="button primary" href="mailto:jackchan1119@gmail.com"><Mail size={17} /> jackchan1119@gmail.com</a>
             <a className="button" href="https://www.linkedin.com/in/jackiechan11" target="_blank" rel="noreferrer"><ExternalLink size={17} /> LinkedIn</a>
