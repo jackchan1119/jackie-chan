@@ -32,13 +32,13 @@ const experience = [
   },
   {
     role: 'Lead Technical Support Specialist',
-    company: 'HMH',
+    company: 'HMTL',
     location: 'Boston, MA',
     date: 'October 2022 – November 2025',
     bullets: [
       'Led U.S. desktop support operations for 4,000+ employees and contractors, including executive leadership.',
       'Managed annual deployment of 300–500 laptops for employees and contractors, with 30-day deployment turnaround.',
-      'Enforced endpoint security controls and supported compliance efforts, contributing to HMTL achieving ISO 27001:2022 tification.',
+      'Enforced endpoint security controls and supported compliance efforts, contributing to HMTL achieving ISO 27001:2022 certification.',
       'Supported security toolings including CrowdStrike EDR, GlobalProtect VPN, and Biomerge secure remote support.',
       'Managed Okta SSO applications and administered Windows endpoints via Intune, Autopilot, and Apple enrollment.'
     ]
@@ -62,13 +62,13 @@ const certifications = [
     title: 'CompTIA Security+',
     issuer: 'CompTIA',
     date: 'November 2026',
-    file: 'public/certificates/security-plus.pdf',
+    file: 'certificates/security-plus.pdf',
   },
   {
     title: 'CompTIA Network+',
     issuer: 'CompTIA',
     date: 'June 2026',
-    file: 'public/certificates/network-plus.pdf',
+    file: 'certificates/network-plus.pdf',
   },
 ];
 
@@ -96,22 +96,32 @@ function App() {
       <main id="top">
         <header className="hero">
           <div className="hero-grid" aria-hidden="true" />
-          <div className="status"><span /> Open to opportunities</div>
-          <h1>Jackie <span>Chan</span></h1>
-          <p className="subtitle">IT Support Engineer <b>→</b> Information Security</p>
-          <p className="intro">Building practical security experience through endpoint management, incident triage, compliance, identity, and audit operations.</p>
-          <div className="hero-actions">
-            <a className="button primary" href="#experience">View experience</a>
-            <a className="button" href="#contact"><Mail size={17} /> Get in touch</a>
-           <a
-  className="button"
-  href={`${import.meta.env.BASE_URL}resume.pdf`}
-  target="_blank"
-  rel="noreferrer"
->
-  <Download size={17} />
-  View résumé
-</a>
+
+          <div className="hero-content">
+            <div className="status"><span /> Open to opportunities</div>
+            <h1>Jackie <span>Chan</span></h1>
+            <p className="subtitle">IT Support Engineer <b>→</b> Information Security</p>
+            <p className="intro">Building practical security experience through endpoint management, incident triage, compliance, identity, and audit operations.</p>
+            <div className="hero-actions">
+              <a className="button primary" href="#experience">View experience</a>
+              <a className="button" href="#contact"><Mail size={17} /> Get in touch</a>
+              <a
+                className="button"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Download size={17} /> View résumé
+              </a>
+            </div>
+          </div>
+
+          <img
+            className="headshot"
+            src={`${import.meta.env.BASE_URL}headshot.jpg`}
+            alt="Jackie Chan"
+          />
+
           <a className="scroll" href="#about" aria-label="Scroll to about section"><ChevronDown /></a>
         </header>
 
@@ -158,7 +168,12 @@ function App() {
                   <Award size={24} aria-hidden="true" />
                   <h3>{cert.title}</h3>
                   <p>{cert.issuer}{cert.date ? ` · ${cert.date}` : ''}</p>
-                  <a className="button" href={`${import.meta.env.BASE_URL}${cert.file}`} target="_blank" rel="noreferrer">
+                  <a
+                    className="button"
+                    href={`${import.meta.env.BASE_URL}${cert.file}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <ExternalLink size={16} /> View certificate
                   </a>
                 </article>
