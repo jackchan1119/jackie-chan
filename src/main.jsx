@@ -68,8 +68,7 @@ const certifications = [
     title: 'CompTIA Network+',
     issuer: 'CompTIA',
     date: 'June 2026',
-    file: 'public/certificates/network-plus.pdf
-',
+    file: 'public/certificates/network-plus.pdf',
   },
 ];
 
