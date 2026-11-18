@@ -1,1 +1,21 @@
-// NOTE: replace this file only when explicitly confirmed?
+.headshot {
+  position: relative;
+  z-index: 2;
+  width: 260px;
+  height: 260px;
+  flex: 0 0 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 18px 45px rgba(28, 43, 79, 0.16);
+}
+
+@media (max-width: 760px) {
+  .headshot {
+    width: 180px;
+    height: 180px;
+    flex-basis: 180px;
+    align-self: center;
+  }
+}
