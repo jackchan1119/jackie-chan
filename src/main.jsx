@@ -26,7 +26,7 @@ const experience = [
       'Analyze and triage 15 suspect phishing emails per week using Mimecast, Exchange message tracing, and Authentication logs.',
       'Investigate 20+ security incidents and critical CVEs, identifying 360+ devices for prioritization and reporting findings to leadership.',
       'Manage macOS security and compliance policies across 250 devices using Jamf Pro and AEM, using Defender and automated software deployment.',
-      'Design and deploy Microsoft Intune environment with 53 devices enrolled at 100% compliance.',
+      'Design and deploy Microsoft Intune environment with currently 53 devices (greatly scaling) enrolled at 100% compliance.',
       'Implement SAML 2.0 SSO through Microsoft Entra ID, reducing help desk tickets and strengthening group-based app assignment.'
     ]
   },
@@ -74,9 +74,9 @@ const certifications = [
 
 const skills = [
   { icon: ShieldCheck, title: 'Security', items: 'CrowdStrike Falcon, Mimecast, Microsoft 365 Defender, Microsoft Entra ID, ISO 27001' },
-  { icon: Network, title: 'Infrastructure', items: 'Active Directory, Azure, Intune, Exchange, VPN, Cisco' },
-  { icon: MonitorCog, title: 'Endpoint & IT', items: 'Microsoft 365, macOS, Windows, Linux, Jamf Pro, ServiceNow, SAML 2.0' },
-  { icon: GraduationCap, title: 'Education', items: 'University of Massachusetts Amherst — B.S. Computer Science' }
+  { icon: Network, title: 'Infrastructure', items: 'Active Directory, Azure, Exchange, Apple Business Manager, Cisco Meraki' },
+  { icon: MonitorCog, title: 'Endpoint & IT', items: 'Microsoft 365, Intune, Jamf' },
+  { icon: GraduationCap, title: 'Education', items: 'University of Massachusetts Amherst — B.S. Computer Engineering' }
 ];
 
 function App() {
@@ -128,7 +128,7 @@ function App() {
           <p className="eyebrow">01 / ABOUT</p>
           <div className="about-grid">
             <h2>Turning hands-on IT experience into a security-focused career.</h2>
-            <p>I’m an IT Support Engineer with 8+ years of enterprise IT experience transitioning into information security and GRC. I have evidence for ISO 27001 controls, triage phishing emails and investigate security incidents, and help maintain compliant endpoints across macOS and Windows environments.</p>
+            <p>I’m an IT Support Engineer with 8+ years of enterprise IT experience transitioning into information security and GRC. I have experience gathering evidence for ISO 27001 controls, triaging phishing emails, investigating security incidents, and help maintaining compliant endpoints across macOS and Windows environments.</p>
           </div>
           <div className="fact-row">
             <div><strong>8+</strong><span>Years in IT</span></div>
