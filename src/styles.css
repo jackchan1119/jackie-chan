@@ -94,7 +94,10 @@ a { color: inherit; text-decoration: none; }
 .contact { text-align: center; border-top: 1px solid #e1e6ef; }
 .contact h2 { font-size: clamp(50px,8vw,82px); }
 .contact > p:not(.eyebrow) { color: #707b90; margin: 22px auto 30px; }
-.contact-links { justify-content: center; }
+.contact-links {
+  justify-content: center;
+  margin-top: 28px;
+}
 footer { max-width: 1120px; margin: 0 auto; min-height: 100px; padding: 30px 24px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e1e6ef; color: #8b94a5; font-size: 13px; }
 footer a { color: #315be8; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .scroll { animation: none; } }
